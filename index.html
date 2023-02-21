@@ -29,10 +29,10 @@
                     </a>
                     <ul class="header-list">
                         <li class="header-item">
-                            <a class="header-link" href="">Studio</a>
+                            <a class="header-link emphasis " href="./index.html">Studio</a>
                         </li>
                         <li class="header-item">
-                            <a class="header-link" href=" ./portfolio.html">Portfolio</a>
+                            <a class="header-link " href=" ./portfolio.html">Portfolio</a>
                         </li>
                         <li class="header-item">
                             <a class="header-link" href="">Contacts</a>
@@ -52,7 +52,7 @@
             <section class="hero">
                 <div class=" container ">
                     <h1 class="hero-title"> Effective Solutions for Your Business</h1>
-                    <button class="hero-button" type="button">Order Service</button>
+                    <button data-modal-open class="hero-button" type="button">Order Service</button>
                 </div>
             </section>
             <!-- 1section -->
@@ -318,8 +318,20 @@
 
                 </div>
             </footer>
-        </main>
+            <div class="beckdrop is-hidden" data-modal>
+                <div class="modal">
 
+                    <button data-modal-close type="button" class="modal-close">
+
+                        <svg class="modal-close-icon" width="8px" height="8px">
+                            <use href="./icon.svg/close-icon.svg#icon-modal-close-icon"></use>
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </main>
+        <script src="./js/modal.js"></script>
     </body>
 
 </html>
